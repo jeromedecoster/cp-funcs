@@ -1,14 +1,30 @@
 {
   "name": "cp-funcs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A very limited subset of cp functions I use every day",
   "repository": "jeromedecoster/cp-funcs",
+  "files": [
+    "exec-file.js",
+    "exec.js"
+  ],
+  "keywords": [
+    "child_process",
+    "promise",
+    "exec-file",
+    "exec"
+  ],
   "author": {
     "name": "Jérôme Decoster",
     "url": "jeromedecoster.com"
   },
   "license": "MIT",
+  "jest": {
+    "testRegex": "tests/.*.js$"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch --runInBand"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
   }
 }
